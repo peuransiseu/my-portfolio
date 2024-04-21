@@ -2,7 +2,7 @@ body{
     font-family: 'Montserrat';
     color: white;
     position: relative;
-    height: 200vh;
+    height: 300vh;
     background-color: #2C383F;
 }
 
@@ -14,6 +14,10 @@ body{
 
 .header h1{
     font-size: 50px;
+}
+
+.header p{
+    font-size: 30px;
 }
 
 .container1{
@@ -58,7 +62,6 @@ body{
     position: absolute;
     bottom: 1px;
     right: 1px;
-    margin-left: 300px;
     height: 500px;
 }
 
@@ -82,14 +85,24 @@ body{
     height: 120px;
 }
 
-/* .container2 #htmllogo{
-    height: 130px;
+
+
+.container3{
+    text-align: center;
+    border: black solid;
+    height: 280px;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 30px;
+ }
+
+ .container3 legend{
+    font-size: 50px;
 }
 
-.container2 #csslogo{
+.container3 img{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     height: 120px;
 }
-
-.container2 #jslogo{
-    height: 120px;
-} */
