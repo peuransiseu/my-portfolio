@@ -4,26 +4,137 @@
     <!-- <link rel="stylesheet" type="text/css" th:href="@{/styles/indexStyles.css}"> -->
     <link rel="stylesheet" type="text/css" href="../styles/indexStyles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- <script type="text/javascript" href="../scripts/index.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-        <p>Hi! Welcome to my website! This website showcases my skills and techstacks as a developer.</p>
+    <header>
+        <div id="myLogo">
+            <img src="../resources/FAF_nobg.png" id="myLogo" alt="myLogo">
+            <h1>F R N C S F N D L</h1>
+        </div>            
+        <nav class="header-buttons">
+            <button id="about-btn">About Me</button> 
+            <button id="work-btn">Work Experiences</button> 
+            <button id="org-btn">Organizations</button> 
+            <button id="proj-btn">Projects</button> 
+            <button id="contact-btn">Contact</button>
+        </nav>
+    </header>
+
+
+    <div class="container1">   
+        <p>Hi ! My name is</p>
+        <h1>Francis Angelo Fundal</h1>
+        <p>Computer Science Student from University of Santo Tomas</p><br>
+        <!-- <p3>University of Santo Tomas</p3> -->
+        <img src="../resources/mypicture.png" alt="mypicture">
     </div>
 
-    <fieldset class="container1">
-        <legend>Who Am I?</legend>
-        <h2>Hi, I am</h2>
-        <h1>Francis Angelo Fundal</h1>
-        <p2>Computer Science Student from</p2><br>
-        <p3>University of Santo Tomas</p3>
-        <img src="../resources/mypicture.png" alt="mypicture">
-    </fieldset>
+    <div class="about-container">
+        <p>I am a Computer Science student. I have a shy but competitive personality. 
+            I study programming in terms of web, application, and machine learning development.
+            I'm a hobbyist photographer, and I was able to do photo and video services for a birthday party and civil marriage events! 
+            Because of it I was able to improve my skills in basic editing such as photos and videos using Adobe Photoshop, Adobe Lightroom, and Adobe Premiere Pro. 
+            I can also work with making creative designs using Canva. You can send a direct message if you are interested in my offers!
+            In addition, I have work experience as a customer service representative for 9 months in two well-known contact center companies in the Philippines, 
+            whereas it helped me improve my soft skills in working with teams, conflict resolutions, active listening, and adaptability.</p>
 
-    <fieldset class="container2">
+    </div>
+
+    <div class="orgs-container">
+
+        <div id="tgs-container">
+            <img src="../resources/tgs-logo.png" alt="tgslogo" id="tgslogo">
+            <div id="tgs-text">
+                <h2>UST Thomasian Gaming Society</h2>
+                <h3>Executive Vice President and Chief Relations Director</h3>
+                <h4>2024 - Present</h4>
+            </div>
+            <div id="tgs-text2">
+                <h3>Executive Coordinator to the Vice President and Chief Relations Director</h3>
+                <h3>2023 - 2024</h3>
+            </div>
+        </div>
+
+        <div id="icssc-container">
+            <img src="../resources/icssc-logo.png" alt="icssclogo" id="icssclogo">
+            <div id="icssc-text">
+                <h2>UST ICS Student Council</h2>
+                <h3>Director for Projects Management</h3>
+                <h4>2024 - Present</h4>
+            </div>
+            <div id="icssc-text2">
+                <h3>Executive Associate to the Internal Vice President</h3>
+                <h4>2023 - 2024</h4>
+            </div>
+            <div id="icssc-text3">
+                <h3>Executive Associate to the President</h3>
+                <h4>2023</h4>
+            </div>
+        </div>
+
+        <div id="awslc-container">
+            <!-- <img src="../resources/icssc-logo.png" alt="icssclogo" id="icssclogo"> -->
+            <div id="awslc-text">
+                <h2>AWS Learning Club - España</h2>
+                <h3>Chief Operations Officer</h3>
+                <h4>2024 - Present</h4>
+            </div>
+        </div>
+
+        <div id="pcu-container">
+            <!-- <img src="../resources/icssc-logo.png" alt="icssclogo" id="icssclogo"> -->
+            <div id="pcu-text">
+                <h2>PCU SHS STEM Society</h2>
+                <h3>Treasurer</h3>
+                <h4>2019 - 2020</h4>
+            </div> 
+            <div id="pcu-text2">
+                <h3>CRTV Media - Videographer</h3>
+                <h4>2018 - 2019</h4>
+            </div>
+        </div>
+   
+        <div id="ola-container">
+            <!-- <img src="../resources/icssc-logo.png" alt="icssclogo" id="icssclogo"> -->
+            <div id="ola-text">
+                <h2>Oxford Louise Academy, Supreme Student Council</h2>
+                <h3>President</h3>
+                <h4>2017 - 2018</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-container">
+        <div id="alorica-container">
+            <div id="alorica-top">
+                <img src="../resources/alorica-logo-white.png" alt="alorica-logo" id="alorica-logo">
+                <h2 id="alorica-name">Alorica Teleservices, Inc.</h2>
+                <div id="alorica-text">
+                    <h3>Customer Experience Agent</h3>
+                    <h3>February 2022 - July 2022</h3>
+                </div>
+            </div>
+            <div id="alorica-details">
+                
+            </div>
+        </div>
+        <div id="amz-container">
+            <img src="../resources/amazon-logo-white.png" alt="amazon-logo-white" id="amazon-logo-white">
+            <div id="amz-text">
+                <h3>Customer Service Associate</h3>
+                <h3>September 2022 - December 2022</h3>
+            </div>
+        </div>
+    </div>
+        
+    
+
+
+    <!-- <fieldset class="container2">
         <legend id="legend">Tech Stack</legend>
         <caption>Listed below are the development languages that I have studied:</caption>
         <h1>Web Development</h1>
@@ -35,14 +146,28 @@
         <img src="../resources/java.svg" alt="javalogo" id="kotlinlogo">
         <img src="../resources/python.svg" alt="pythonlogo">
         <img src="../resources/kotlin.svg" alt="kotlinlogo">
-    </fieldset>
+    </fieldset> -->
 
-    <fieldset class="container3">
+    <!-- <fieldset class="container3">
         <legend>Development Environments</legend>
         <caption>Listed below are the development platforms that I use to develop programs:</caption><br>
         <img src="../resources/vscode.svg" alt="javalogo" id="kotlinlogo">
         <img src="../resources/netbeans.svg" alt="javalogo" id="kotlinlogo">
         <img src="../resources/androidstudio.svg" alt="javalogo" id="kotlinlogo">
-    </fieldset>
+    </fieldset> -->
+
+ 
+    <div class="footer">
+        <hr class="solid">
+        <img src="../resources/FAF_nobg.png" alt="myLogo">
+        <div id="socials-logo">
+            <img src="../resources/instagram-logo.png" id="socials-logo" alt="socials-logo">
+            <img src="../resources/facebook-logo.png" id="socials-logo" alt="socials-logo">
+        </div>
+        
+    </div>
+
+    
+    <script src="../scripts/index.js"></script>
 </body>
 </html>
