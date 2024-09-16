@@ -66,7 +66,8 @@ header #myLogo{
 .header-buttons button:active{
     cursor: pointer;
     color: wheat;
-    border-bottom: 2px solid wheat; 
+    /* border-bottom: 2px solid wheat;  */
+    transform: scale(1.1);
 }
 
 
@@ -92,6 +93,14 @@ header #myLogo{
     font-size: 75px;
 }
 
+.container1 h1:hover{
+    cursor: default;
+    background: linear-gradient(to right, orange,red);
+    background-clip: text;
+    color: transparent;
+    transition: 0.4s ease-in-out;
+}
+
 .container1 p{
     position: relative;
     font-size: 30px;
@@ -106,37 +115,44 @@ header #myLogo{
     height: 550px;
 }
 
-
-.container2{
-   text-align: center;
-   border: black solid;
-   height: 600px;
-   border-radius: 20px;
-   margin-left: 100px;
-   margin-right: 100px;
-   padding: 30px;
-}
-
-.container2 legend{
-    font-size: 50px;
-}
-
-.container2 img{
-    margin: 20px;
-    height: 120px;
-}
-
 .about-container{
     position: relative;
-    width: 89%;
-    padding: 10px 50px 25px; 
-    margin: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    left: 3.5%;
+    padding: 50px 75px 25px; 
+    margin: 50px 200px;
     border-radius: 20px;
     /* background: #1b2327; */
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
 }
 
-.about-container legend{
-    font-size: 40px;
+.about-container img{
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    width: 50px;
+    height: 50px;
+    transform: scale(5.0);
+    object-position: 50% 50%;
+    object-fit: contain;
+}
+
+#about-text{
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    width: 70%;
+    text-align:justify;
+
+}
+
+.about-container img:hover{
+    filter: grayscale(0%);
+    transition: 0.3s ease;
 }
 
 .orgs-container{
@@ -281,23 +297,31 @@ hr.solid{
     margin-top: 50px;
 }
 
-
-
-.footer img{
-    position: absolute;
-    height: 90px;
+.footer hr{
+    margin-bottom: 35px;
 }
 
-.footer #socials-logo{
+#footer-content{
     position: relative;
-    flex-direction: row;
-    top: 40px;
-    height: 40%;
-    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#socials-logo:hover{
+#socials-logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 40px;
+    padding: 10px;
+}
+
+#facebook-logo:hover, #instagram-logo:hover, #linkedin-logo:hover{
     cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 
 
