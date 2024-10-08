@@ -16,10 +16,10 @@ body{
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    padding: 25px 80px;
     /* height: 300vh; */
     /* background-color: #2C383F; */
     background: #1b2327;
-
 }
 
 header{
@@ -28,9 +28,8 @@ header{
     flex-direction: row;
     top: 0;
     left: 0;
-    margin-top: 10px;
     width: 100%;
-    padding: 2rem 5%;
+    padding: 2rem 0.5%;
     /* padding: 50px 120px 40px; */
     justify-content: space-between; 
     align-items: center;
@@ -46,12 +45,21 @@ header #myLogo{
     align-items: center;
 }   
 
+#myLogo:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+
+.header-buttons{
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
 
 .header-buttons button{
     position: relative;
-    right: 5%;
     font-family: 'Montserrat';
-    margin-left: 20px;
     color: white;
     padding: 5px;
     font-size: 20px;
@@ -61,15 +69,14 @@ header #myLogo{
 }
 
 
-
 .header-buttons button:hover,
 .header-buttons button:active{
     cursor: pointer;
-    color: wheat;
+    color: orange;
     /* border-bottom: 2px solid wheat;  */
     transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
-
 
 
 .navbar li{
@@ -81,16 +88,16 @@ header #myLogo{
     display: block;
     height: 70%;  
     padding: 120px 80px 120px;
-    margin: 20px 100px 0px;
     border: 0px;
     border-radius: 20px;
     /* background: #1b2327; */
-    background: #2C383F;
+    background: #2C383F; 
 }
 
 .container1 h1{
     position: relative;
     font-size: 75px;
+    width:fit-content;
 }
 
 .container1 h1:hover{
@@ -120,10 +127,9 @@ header #myLogo{
     display: flex;
     flex-direction: row;
     left: 3.5%;
-    padding: 50px 75px 25px; 
+    padding: 50px 0px; 
     margin: 50px 200px;
     border-radius: 20px;
-    /* background: #1b2327; */
     align-items: center;
     justify-content: center;
     gap: 200px;
@@ -145,9 +151,10 @@ header #myLogo{
     font-size: 20px;
     display: flex;
     position: relative;
-    width: 70%;
+    width: 100%;
     text-align:justify;
-
+    border-left: 2px white solid;
+    padding-left: 8%;
 }
 
 .about-container img:hover{
@@ -155,62 +162,329 @@ header #myLogo{
     transition: 0.3s ease;
 }
 
+
 .orgs-container{
     position: relative;
     display: flex;
-    flex-direction: column;
-    width: 85%;
+    flex-direction: row;
+    gap: 30px;
+    width: 90%;
+    height: fit-content;
     margin: 25px 100px;
-    padding: 40px;
-    border-radius: 20px;
-    background: #2C383F;
+    padding: 20px;
+    /* background: #2C383F; */
+    /* background: #1b2327;  */
+}
+
+
+#orgs-container-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    border-radius: 30px;
+    margin-right: 100px;
+    font-size: 30px;
     /* background: #1b2327; */
 }
 
-#tgs-container {
+#orgs-container-title strong{
+    font-size: 50px;
+}
+
+/* .orgs-container i{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+} */
+
+
+
+.orgs-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 20px;
+}
+
+.orgs-wrapper #arrow-left-button{
+    position: absolute;
+    display: flex;
+
+    bottom: 50%;
+    left: 0;
+    height: 50px;
+    width: 30px;
+    text-align: center;
+    align-items: start;
+    background-color: white;
+    transform: translateY(-50);
+    padding: 5px;
+}
+
+.orgs-wrapper button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.orgs-wrapper #arrow-right-button{
+    position: absolute;
+    display: flex;
+    bottom: 50%;
+    right: 0%;
+    height: 50px;
+    width: 30px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    transform: translateY(-50);
+}
+
+/* .orgs-wrapper #arrow-right-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+} */
+
+#orgs-detail-container{
+    position: relative;
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    object-fit: contain;
+    overflow: hidden;
+    width: calc(100/3);
+    padding: 60px;
+    background: #2C383F;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+}
+/* 
+#orgs-detail-container:hover{
+    cursor: pointer;
+} */
+
+#tgs-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-right: 1px solid white;
+    padding-right: 30px;
 }
 
 #tgs-container img{
     position: relative;
-    height: 120px;
+    display: flex;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+#tgs-container h2{
+    position: relative;
+    width: 200px;
 }
 
 #tgs-text {
     position: relative;
+    display: flex;
+    flex-direction: column;
     top: 30px;
+    font-weight: normal;
+    width: 300px;
+    gap: 10px;
 }
 
-
 #icssc-container {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    margin: 0px 40px;
+    flex-direction: column;
+    width: fit-content;
+    border-right: 1px solid white;
+    padding: 20px;
 }
 
 #icssc-container img{
     position: relative;
-    height: 70px;
-    right: 15px;
+    height: 65px;
+    bottom: 30px;
+}
+
+#icssc-container h2{
+    position: relative;
+    width: 200px;
 }
 
 #icssc-text {
     position: relative;
-    left: 5px;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    font-weight: normal;
+    width: 300px;
+    gap: 5px
 }
 
+#awslc-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-right: 1px solid white;
+    padding: 20px;
+}
+
+#awslc-container img{
+    position: relative;
+    height: 65px;
+    bottom: 30px;
+}
+
+#awslc-container h2{
+    position: relative;
+    width: 200px;
+}
+
+#awslc-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    font-weight: normal;
+    width: 250px;
+}
+
+#cnag-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-right: 1px solid white;
+    padding: 20px;
+}
+
+#cnag-container img{
+    position: relative;
+    height: 65px;
+    margin-bottom: 12px;
+    bottom: 10px;
+}
+
+#cnag-container h2{
+    position: relative;
+    width: 200px;
+}
+
+#cnag-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    font-weight: normal;
+    width: 250px;
+}
+
+#pcu-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-right: 1px solid white;
+    padding: 20px;
+}
+
+#pcu-container img{
+    position: relative;
+    height: 65px;
+    margin-bottom: 12px;
+    bottom: 10px;
+}
+
+#pcu-container h2{
+    position: relative;
+    width: 200px;
+}
+
+#pcu-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    font-weight: normal;
+    width: 250px;
+    gap: 5px
+}
+
+#ola-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-right: 1px solid white;
+    padding: 20px;
+}
+
+#ola-container img{
+    position: relative;
+    height: 65px;
+    margin-bottom: 12px;
+    bottom: 10px;
+}
+
+#ola-container h2{
+    position: relative;
+    width: 200px;
+}
+
+#ola-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    font-weight: normal;
+    width: 250px;
+    gap: 5px
+}
+
+
+#tgslogo:hover, #icssclogo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
 
 .work-container{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 85%;
     height: 100%;
     margin: 25px 100px;
     padding: 40px;
+    
+}
 
-    /* background: #1b2327; */
+#work-container-title{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#work-detail-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
 }
 
 #alorica-container{
@@ -219,15 +493,23 @@ header #myLogo{
     flex-direction: column;
     align-items: start;
     margin-right: 100px;
-    border-radius: 20px;
-    background: #2C383F;
-    padding: 20px;
+    padding: 10px;
+    padding-right: 100px;
+    border-right: 1px solid white;
+    gap: 10px;
 }
 
 #alorica-container img{
     position: relative;
     display: flex;
-    height: 100px;
+    height: 150px;
+    bottom: 20px;
+}
+
+#alorica-container h2{
+    position: relative;
+    width: 300px;
+    bottom: 20px;
 }
 
 #alorica-text{
@@ -245,7 +527,7 @@ header #myLogo{
     align-items: start;
     padding: 20px;
     border-radius: 20px;
-    background: #2C383F;
+    gap: 10px;
 }
 
 #amz-container img{
@@ -253,18 +535,15 @@ header #myLogo{
     display: flex;
     height: 50px;
     top: 10px;
+    margin-bottom: 30px;
 }
 
 #amz-text {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 50px;
-    align-items: center;
+    align-items: start;
 }
-
-
-
 
 .container3{
     text-align: center;

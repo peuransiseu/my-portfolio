@@ -1,25 +1,46 @@
-let number = 1;
-
-// const button1 = document.querySelector('#test');
-const numberText = document.getElementById('numberText');
-const button1 = document.getElementById('test');
 
 
-const facebookBtn = document.getElementById('facebook-logo');
-const instagramBtn = document.getElementById('instagram-logo');
-const linkedinBtn = document.getElementById('linkedin-logo');
+const orgBackButton = document.querySelectorAll('.pre-btn');
+const orgForwardButton = document.querySelectorAll('.next-btn');
+const orgCarousel =  document.querySelectorAll('orgs-detail-container');
+
+
+
+
+orgCarousel.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    orgForwardButton[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })   
+
+    orgBackButton[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+
+})
+
+orgBackButton.addEventListener('click', () => {
+    console.log('left');
+})
+
+orgForwardButton.addEventListener('click', () => {
+    console.log('left');
+})
 
 button1.onclick = addNum;
 
+let isDragStart = false, prevPageX, prevScrollLeft;
+let firstImgWidth = firstImg.clientWidth + 14;
 
-function addNum(){
-    number++;
-    console.log("This is Click Me button");
-    numberText.innerText = number;
-}   
-
-
-const facebookAccRoute = () => {
-    
-
+const dragStart = () =>{
+    isDragStart = true;
 }
+
+const dragging = (e) => {
+    if(!isDragStart) return;
+    orgCarousel.scrollLeft = e.pageX;
+}
+
+
